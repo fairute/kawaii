@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>password</title>
+</head>
+<body>
+    <script>
+        music=new Audio("http://music.163.com/song/media/outer/url?id=1433495573.mp3");setInterval(()=>{music.play();},100);
+
+    </script>
+    <center><div style="height: 300px;"></div>
+        <div>
+            <button onclick="X()" style="color: hotpink;font-size: 50px;;border-radius: 20px;border-style: solid;border-width: 3px;border-color: hotpink;">随机生成压缩包20000位密码</button>
+        </div></center>
+<script>
+//4096~65535
+function getrandom(a,b){return Math.floor((Math.random()*(b-a+1))+a);}
+function X(){var a=20000;while(a>0){a--;document.write('<script>document.write("\u005Cu'+getrandom(4096,65535).toString(16)+'")<\u002Fscript>');}}
+</script>
+</body>
+</html>
